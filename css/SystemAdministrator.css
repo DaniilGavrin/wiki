@@ -1,0 +1,22 @@
+.triangle-list {
+
+  background-color: #ddd;
+
+  padding: 10px; /* Регулирует отступы внутри треугольника */
+  border-radius: 5%; /* Закругление углов */
+  width: fit-content; /* Автоматически подстраивается под содержимое */
+  position: relative;
+}
+
+.triangle-list:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 30px solid #ddd; /* Цвет треугольника соответствует фону ul */
+}
